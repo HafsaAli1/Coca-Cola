@@ -1,0 +1,444 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+/*About the nav bar*/
+nav {
+  background-color: white;
+  padding: 20px;
+  position: top;
+  padding-bottom: 0px;
+}
+
+a {
+  background-color: white;
+  color: black;
+  font-family: sans-serif;
+  font-size: 15px
+}
+
+#a1:hover {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/*For position of image (Coca-Cola Logo)*/
+#i1 {
+  position: relative;
+  top: 6px;
+}
+
+/*Dropdown button*/
+.dropbtn {
+  position: relative;
+  top: -3px;
+  padding: 16px;
+  border: none;
+  font-size: 15px;
+  font-family: sans-serif
+}
+
+.dropbtn:hover {
+  font-weight: bold;
+}
+
+/*The container <div> - needed to position the dropdown content*/
+.dropdown {
+  position: relative;
+  left: 200px;
+  top: -30px;
+  display: inline-block;
+  background-color: white;
+}
+
+/*dropdown-content (Hidden by Default)*/
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/*Links inside dropdown*/
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/*Change colour of dropdown links on hover*/
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/*Show the dropdown menu on hover*/
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*Change the background colour of the dropsown button when the dropdown content is shown*/
+.dropdown:hover .dropbtn {
+  background-color: white;
+}
+
+/*For the bacground colour of the whole page*/
+body {
+  background-color: #ecedef;
+}
+
+
+/* Image Transitions */
+.slider-wrapper {
+  position: relative;
+  max-width: 85%;
+  margin: 0 auto;
+  border-radius: 15px;
+  top: 30px;
+}
+
+.slider {
+  display: flex;
+  aspect-ratio: 70/30;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  border-radius: 15px;
+}
+
+.slider img {
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+}
+
+.slider img:hover {
+  background-color: black;
+}
+
+.slider-nav {
+  display: flex;
+  column-gap: 14px;
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.slider-nav a {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid grey;
+}
+
+.slider-nav a:hover {
+  border: 1px solid #000
+}
+
+/*This for all headings*/
+h1, h2, h3 {
+  color: r, g, b(0, 0, 0);
+  font-family: sans-serif;
+  font-size: 35px;
+  position: relative;
+  top: 120px;
+  text-align: center;
+  font-stretch: expanded;
+  font-weight: medium;
+}
+
+h2 {
+  left: 280px;
+}
+
+/*Pictures under the popular section*/
+.column {
+  float: left;
+  width: 40%;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  border-radius: 10px;
+}
+
+#i3, #i4 {
+  border-radius: 10px;
+  position: relative;
+  top: 136px;
+  left: 95px;
+  height: 300px;
+  width: 600px;
+}
+
+#i4 {
+  position: relative;
+  margin-left: 500px;
+  top: -527px;
+  width: 500px;
+  height: 300px;
+}
+
+/* Text box for image on left side of popular section */
+.text-box {
+  position: absolute;
+  left: 100px;
+  bottom: -701px;
+  background-color: white;
+  padding: 25px;
+  width: 486px;
+  height: 40%;
+  box-sizing: border-box;
+  border-radius: 15px;
+  display: inline-block;
+  font-family: sans-serif;
+  font-stretch: extra-expanded;
+  font-size: 18px;
+}
+
+/* Text box for image on right side of popular section */
+.text-box2 {
+  background-color: white;
+  position: relative;
+  left: 600px;
+  top: -10px;
+  border-radius: 15px;
+  width: 480px;
+  height: 350px;
+  padding: 25px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-stretch: extra-expanded;
+  font-size: 18px;
+  display: inline-block;
+  padding-top: 180px;
+}
+
+/*Global impact and Explore Brands header*/
+h2, h3 {
+  position: relative;
+  top: 100px;
+  left: 275px;
+  font-size: 35px;
+}
+
+/*Global impact image*/
+#i5 {
+  border-radius: 15px;
+  position: relative;
+  top: 100px;
+  right: 315px;
+  height: 500px;
+  width: 700px;
+  margin-left: 225px;
+  margin-top: 145px;
+}
+
+/* Global impact text box */
+.text-box3 {
+  background-color: white;
+  padding: 50px;
+  width: 550px;
+  height: 500px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  margin-left: 500px;
+  margin-top: 380px;
+  position: absolute;
+  top: 110px;
+  left: 10px;
+}
+
+/* Text in global impact text box */
+#p1 {
+  font-size: 20px;
+  font-family: sans-serif;
+  font-stretch: 2px;
+}
+
+/* Button in global impact text box */
+button {
+  border-radius: 20px;
+  color: black;
+  background-color: white;
+  padding: 10 px;
+  position: absolute;
+  top: 400px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+button:hover {
+  color: grey;
+}
+
+
+/* Explore brands section */
+h3 {
+  position: relative;
+  top: 150px;
+}
+
+/* 6 brand logos */
+.picture-row, .picture-row2 {
+  display: flex;
+}
+
+.picture {
+  border-radius: 10px;
+  margin: 10px;
+  transition: transform 0.3s ease;
+  width: 250px;
+  height: 250px;
+  position: relative;
+  top: 150px;
+  left: 80px;
+}
+
+.picture:hover {
+  transform: scale(1.05);
+}
+
+/* View All button */
+#b2 {
+  background-color: #ecedef;
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  position: absolute;
+  top: 1775px;
+  right: -180px;
+}
+
+/* Footer CSS */
+footer {
+  padding: 20px 250px;
+  background-color: black;
+  font-style: white;
+  position: relative;
+  top: 350px;
+  right: 200px;
+  width: 795px;
+  height: 580px;
+}
+
+/* Logo on footer */
+footer img {
+  width: 275px;
+  height: 85px;
+  position: relative;
+  right: 140px;
+  top: 10px;
+}
+
+/* First horizontal line break on footer */
+hr {
+  position: relative;
+  top: 5px;
+  right: 130px;
+  width: 1130px;
+
+}
+
+/* Great Britain button on footer */
+#fbtn {
+  position: absolute;
+  right: 55px;
+  color: white;
+  top: 50px;
+  border-radius: 20px;
+  background-color: black;
+  font-size: 15px;
+  font-family: sans-serif;
+  border: 2px solid white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+/* Text on footer */
+#ul1 {
+  color: white;
+  position: relative;
+  top: 30px;
+  right: 160px;
+  font-family: sans-serif;
+  list-style-type: none;
+  font-size: 15px;
+}
+
+#ul2 {
+  color: white;
+  position: relative;
+  left: 20px;
+  bottom: 102px;
+  font-family: sans-serif;
+  list-style-type: none;
+  font-size: 15px;
+}
+
+#ul3 {
+  color: white;
+  position: relative;
+  left: 225px;
+  bottom: 257px;
+  font-family: sans-serif;
+  list-style-type: none;
+  font-size: 15px;
+}
+
+.l1, .l2 {
+  color: #c4c6ca;
+  font-size: 11px;
+  list-style-type: none;
+}
+
+/* Second horizontal line break on footer*/
+#hr1 {
+  position: absolute;
+  top: 520px;
+  left: 118px;
+}
+
+/* Text at bottom of footer */
+.text-bottom {
+  position: relative;
+  bottom: 185px;
+  left: 695px;
+  color: white;
+  font-size: 13px;
+  font-family: sans-serif;
+  ;
+}
+
+/* This is the code for the social media logos */
+#Twitter, #Insta, #Youtube, #Facebook {
+  width: 30px;
+  height: 30px;
+  border: 2px solid white;
+  position: relative;
+  left: 850px;
+  top: -525px;
+  border-radius: 50%;
+}
